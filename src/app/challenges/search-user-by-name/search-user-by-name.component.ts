@@ -32,8 +32,8 @@ export class SearchUserByNameComponent implements OnInit, AfterViewInit {
 
   private _getListUsers(): void {
     this.http.get('assets/sample.json').subscribe((data: any)=> {
-      this.listUsers = data;
-      this.dataSource.data = data;
+      this.listUsers = data.sort((a: User, b: User) => a.name.localeCompare(b.name));
+      this.dataSource.data = this.listUsers;
     });
   }
 
