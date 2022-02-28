@@ -1,0 +1,14 @@
+<div class="container">
+  <h1>Palindrome Challenge</h1>
+  <div class="column">
+    <label>Type a word or sentence...</label>
+    <input type="text" (input)="isPalindrome(sentence.value)" #sentence>
+  </div>
+  <div class="result">
+    <p *ngIf="sentence.value">
+      The word/sentence <strong>"{{ sentence.value }}"</strong>
+       {{ isCurrentStringAPalindrome ? 'is a palindrome!' : "it is not a palindrome." }}
+    </p>
+  </div>
+</div>
+
