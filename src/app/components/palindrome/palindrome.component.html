@@ -7,13 +7,15 @@
   <div class="result">
     <ng-container *ngIf="sentence.value">
       <div class="icon">
-        <mat-icon *ngIf="!isCurrentStringAPalindrome">thumb_down</mat-icon>
-        <mat-icon *ngIf="isCurrentStringAPalindrome">thumb_up</mat-icon>
+        <mat-icon *ngIf="isCurrentStringAPalindrome">check_circle_outline</mat-icon>
+        <mat-icon id="thumb-down" *ngIf="!isCurrentStringAPalindrome">highlight_off</mat-icon>
       </div>
-      <p>
-        <strong class="word">{{ sentence.value }}</strong>
-         {{ isCurrentStringAPalindrome ? 'is a palindrome word/sentence!' : "is not a palindrome word/sentence!" }}
-      </p>
+      <div class="is-palindrome">
+        <p>
+          <strong>{{ sentence.value }}</strong>
+           {{ isCurrentStringAPalindrome ? 'is a palindrome word/sentence!' : "is not a palindrome word/sentence!" }}
+        </p>
+      </div>
     </ng-container>
   </div>
 </div>
