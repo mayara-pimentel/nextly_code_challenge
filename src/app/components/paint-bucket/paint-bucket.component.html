@@ -1,0 +1,23 @@
+<div class="container paint-bucket">
+  <div class="container-header">
+    <h2>Paint Bucket<span></span></h2>
+  </div>
+  <div class="container-content">
+    <div class="item form">
+      <div class="column">
+        <label>Provide the pixel you want to "paint"<span>e g. 1,3</span></label>
+        <input type="text" value="1,3" maxlength="3" #pixel>
+      </div>
+      <div class="column">
+        <label>What's the desired character?<span>The character represents the color</span></label>
+        <input type="text" value="o" maxlength="1" #character>
+      </div>
+      <button class="btn-paint" (click)="paint(pixel.value, character.value)">Paint!</button>
+      <button class="btn-reset" (click)="this.resetArray()">Reset Array</button>
+    </div>
+    <div class="item">
+      <div class="table-2d-array" [innerHtml]="html"></div>
+    </div>
+  </div>
+</div>
+

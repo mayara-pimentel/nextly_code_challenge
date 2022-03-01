@@ -1,9 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+
+// Color Pallete
 $reef: #c1ff84;
 $pray: #8defee;
 $meirese: #c8b5ff;
 $medium-purple: #8c63dd;
-$quamarine: #72f9e1;
+$aquamarine: #72f9e1;
 
 body {
   font-family: 'Lato', sans-serif;
@@ -22,9 +24,12 @@ body {
   flex-wrap: wrap;
 
   & > div {
-    flex: 0 45%;
-    margin-right: 5%;
+    flex: 0 48%;
     margin-bottom: 10px;
+
+    &:first-child {
+      margin-right: 4%;
+    }
   }
 
   .challenge-item {
@@ -79,11 +84,17 @@ label {
   align-items: center;
   margin-bottom: 20px;
   height: 60px;
+  justify-content: space-between;
 
-  #logo {
-    width: 42px;
-    margin: 0 10px 10px 0;
+  .logo {
+    display: flex;
+    align-items: center;
+    img {
+      width: 42px;
+      margin: 0 10px 10px 0;
+    }
   }
+
 }
 
 h1 {
@@ -126,4 +137,5 @@ td.mat-footer-cell {
   height: 35px !important;
   margin-left: 2px !important;
   line-height: 35px !important;
+  background-color: $aquamarine;
 }

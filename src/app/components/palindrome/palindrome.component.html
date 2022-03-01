@@ -6,8 +6,8 @@
   </div>
   <div class="result">
     <p *ngIf="sentence.value">
-      The word/sentence <strong>"{{ sentence.value }}"</strong>
-       {{ isCurrentStringAPalindrome ? 'is a palindrome!' : "it is not a palindrome." }}
+      <strong>"{{ sentence.value }}"</strong>
+       {{ isCurrentStringAPalindrome ? 'is a palindrome word/sentence!' : "it is not a palindrome word/sentence!" }}
     </p>
   </div>
 </div>
