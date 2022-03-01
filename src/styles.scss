@@ -7,8 +7,7 @@ $quamarine: #72f9e1;
 
 body {
   font-family: 'Lato', sans-serif;
-  box-sizing: border-box;
-  padding: 50px 100px;
+  padding: 35px 70px;
   height: 100%;
   margin: 0;
 }
@@ -18,31 +17,50 @@ body {
   flex-flow: column;
 }
 
-.challenge-container {
-  padding: 30px;
-  width: 350px;
-  height: 100%;
+.challenges {
   display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  border-radius: 6px;
-  box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px,
-              rgb(0 0 0 / 6%) 0px 1px 2px 0px;
-  outline: 0px;
+  flex-wrap: wrap;
 
-  &:hover {
-    box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
-                rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+  & > div {
+    flex: 0 45%;
+    margin-right: 5%;
+    margin-bottom: 10px;
   }
-  margin-bottom: 30px;
+
+  .challenge-item {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: rgb(0 0 0 / 10%) 0px 1px 3px 0px,
+                rgb(0 0 0 / 6%) 0px 1px 2px 0px;
+    outline: 0px;
+    margin-bottom: 30px;
+
+    &:hover {
+      box-shadow: rgb(0 0 0 / 10%) 0px 4px 6px -1px,
+                  rgb(0 0 0 / 6%) 0px 2px 4px -1px;
+    }
+
+    .container {
+      padding: 30px;
+    }
+  }
+
 }
 
 .reef-bg {
   background-color: $reef;
 }
 
-.medium-purple-bg {
-  background-color: $medium-purple;
+.purple-bg {
+  background-color: $meirese;
+}
+
+.pray-bg {
+  background-color: $pray;
 }
 
 input {
@@ -56,9 +74,28 @@ label {
   margin-bottom: 5px;
 }
 
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  height: 60px;
+
+  #logo {
+    width: 42px;
+    margin: 0 10px 10px 0;
+  }
+}
+
 h1 {
   margin: 0;
   margin-bottom: 10px;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 2rem;
 }
 
 table.mat-table {
@@ -83,7 +120,6 @@ td.mat-footer-cell {
   padding: 0 !important;
   padding-left: 20px !important;
 }
-
 
 .mat-paginator-range-actions .mat-icon-button {
   width: 35px !important;

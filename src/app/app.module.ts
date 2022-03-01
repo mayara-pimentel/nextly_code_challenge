@@ -10,12 +10,14 @@ import { SearchUserByNameComponent } from './challenges/search-user-by-name/sear
 import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
+import { PaintBucketComponent } from './challenges/paint-bucket/paint-bucket.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PalindromeComponent,
-    SearchUserByNameComponent
+    SearchUserByNameComponent,
+    PaintBucketComponent
   ],
   imports: [
     BrowserModule,

@@ -1,10 +1,24 @@
-<div class="content">
-  <div class="challenge-container reef-bg">
-    <app-palindrome></app-palindrome>
+<div class="container">
+  <div class="header">
+    <img id="logo" src="../assets/logo_nextly.svg" alt="">
+    <h1>Nextly Code Challenge</h1>
   </div>
-  <div class="challenge-container medium-purple-bg">
-    <app-search-user-by-name></app-search-user-by-name>
+  <div class="challenges">
+    <div class="column">
+      <div class="challenge-item reef-bg">
+        <app-palindrome></app-palindrome>
+      </div>
+      <div class="challenge-item pray-bg">
+        <app-paint-bucket></app-paint-bucket>
+      </div>
+    </div>
+    <div class="column">
+      <div class="challenge-item purple-bg">
+        <app-search-user-by-name></app-search-user-by-name>
+      </div>
+    </div>
   </div>
 </div>
+
 
 <router-outlet></router-outlet>

@@ -1,15 +1,19 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-palindrome',
   templateUrl: './palindrome.component.html',
   styleUrls: ['./palindrome.component.scss']
 })
-export class PalindromeComponent {
-
+export class PalindromeComponent implements OnInit {
+  inputDefault: string = 'Arara';
   isCurrentStringAPalindrome?: boolean;
 
   constructor() { }
+
+  ngOnInit(): void {
+    this.isPalindrome(this.inputDefault);
+  }
 
   /**
    * Checks if a word/sentence is palindrome or not.

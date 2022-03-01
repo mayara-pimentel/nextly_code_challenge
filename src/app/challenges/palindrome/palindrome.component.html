@@ -1,8 +1,8 @@
 <div class="container">
-  <h1>Palindrome Check</h1>
+  <h2>Palindrome Check</h2>
   <div class="column">
     <label>Type a word or sentence...</label>
-    <input type="text" (input)="isPalindrome(sentence.value)" #sentence>
+    <input type="text" (input)="isPalindrome(sentence.value)" value="{{inputDefault}}" #sentence>
   </div>
   <div class="result">
     <p *ngIf="sentence.value">
