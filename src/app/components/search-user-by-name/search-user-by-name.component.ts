@@ -38,7 +38,7 @@ export class SearchUserByNameComponent implements OnInit, AfterViewInit {
   }
 
   searchByName(name: string): void {
-    this.dataSource.data = this.listUsers.filter(data => data.name.toLowerCase().includes(name.toLowerCase()));
+    this.dataSource.data = this.listUsers.filter(data => data.name.toLowerCase().startsWith(name.toLowerCase()));
   }
 
 }
