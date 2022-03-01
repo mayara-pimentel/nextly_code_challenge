@@ -11,6 +11,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { PaintBucketComponent } from './components/paint-bucket/paint-bucket.component';
+import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { PaintBucketComponent } from './components/paint-bucket/paint-bucket.com
     BrowserAnimationsModule,
     HttpClientModule,
     MatTableModule,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]

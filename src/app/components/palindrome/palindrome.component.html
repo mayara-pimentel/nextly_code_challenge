@@ -1,14 +1,20 @@
 <div class="container">
-  <h2>Palindrome Check</h2>
+  <h2>Palindrome Word Checker</h2>
   <div class="column">
     <label>Type a word or sentence...</label>
     <input type="text" (input)="isPalindrome(sentence.value)" value="{{inputDefault}}" #sentence>
   </div>
   <div class="result">
-    <p *ngIf="sentence.value">
-      <strong>"{{ sentence.value }}"</strong>
-       {{ isCurrentStringAPalindrome ? 'is a palindrome word/sentence!' : "is not a palindrome word/sentence!" }}
-    </p>
+    <ng-container *ngIf="sentence.value">
+      <div class="icon">
+        <mat-icon *ngIf="!isCurrentStringAPalindrome">thumb_down</mat-icon>
+        <mat-icon *ngIf="isCurrentStringAPalindrome">thumb_up</mat-icon>
+      </div>
+      <p>
+        <strong class="word">{{ sentence.value }}</strong>
+         {{ isCurrentStringAPalindrome ? 'is a palindrome word/sentence!' : "is not a palindrome word/sentence!" }}
+      </p>
+    </ng-container>
   </div>
 </div>
 
