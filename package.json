@@ -4,10 +4,10 @@
   "scripts": {
     "ng": "ng",
     "start" : "node server.js",
-    "build": "ng build",
+    "build": "ng build --base-href /nextly-code-challenge/",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "heroku-postbuild": "ng build"
+    "heroku-postbuild": "ng build --base-href /nextly-code-challenge/"
   },
   "private": true,
   "dependencies": {
