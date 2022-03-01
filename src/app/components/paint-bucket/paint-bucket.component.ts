@@ -62,7 +62,7 @@ export class PaintBucketComponent implements OnInit {
 
       for (var j = 0; j < this.PIXEL_Y; j++) {
         let td = document.createElement('td');
-        td.append(this.multidimensionalArray[i][j] + " ");
+        td.append(this.multidimensionalArray[i][j]);
         tr.append(td);
       }
       table.append(tr);
