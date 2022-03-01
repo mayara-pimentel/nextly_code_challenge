@@ -5,11 +5,13 @@
   <div class="container-content">
     <div class="item form">
       <div class="column">
-        <label>Provide the pixel you want to "paint"<span>e g. 1,3</span></label>
-        <input type="text" value="1,3" maxlength="3" #pixel>
+        <label>Provide the pixel you want to "paint"</label>
+        <span>e g. 0,1</span>
+        <input type="text" value="0,1" maxlength="3" #pixel>
       </div>
       <div class="column">
-        <label>What's the desired character?<span>The character represents the color</span></label>
+        <label>Provide the "color":</label>
+        <span>A single character represents the color. e g. #</span>
         <input type="text" value="o" maxlength="1" #character>
       </div>
       <button class="btn-paint" (click)="paint(pixel.value, character.value)">Paint!</button>
