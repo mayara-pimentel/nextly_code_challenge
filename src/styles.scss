@@ -10,6 +10,9 @@ $aquamarine: #72f9e1;
 body {
   font-family: 'Lato', sans-serif;
   padding: 35px 70px;
+  @media(max-width: 782px) {
+    padding: 25px;
+  }
   height: 100%;
   margin: 0;
 }
@@ -20,15 +23,19 @@ body {
 }
 
 .challenges {
-  display: flex;
-  flex-wrap: wrap;
+  @media(min-width: 783px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   & > div {
     flex: 0 48%;
     margin-bottom: 10px;
 
-    &:first-child {
-      margin-right: 4%;
+    @media(min-width: 782px) {
+      &:first-child {
+        margin-right: 4%;
+      }
     }
   }
 
@@ -86,6 +93,10 @@ label {
   height: 60px;
   justify-content: space-between;
 
+  @media (max-width: 1000px) {
+    flex-flow: column;
+    height: auto;
+  }
   .logo {
     display: flex;
     align-items: center;
@@ -101,6 +112,10 @@ h1 {
   margin: 0;
   margin-bottom: 10px;
   font-size: 2.5rem;
+
+  @media (max-width: 1000px) {
+    font-size: 1.5rem;
+  }
 }
 
 h2 {

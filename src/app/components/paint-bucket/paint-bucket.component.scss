@@ -2,8 +2,10 @@
 
 .paint-bucket {
   .container-content {
-    display: flex;
-    flex-wrap: wrap;
+    @media(min-width: 1001px) {
+      display: flex;
+      flex-wrap: wrap;
+    }
 
     & > div {
       flex: 0 50%;
