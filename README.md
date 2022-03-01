@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
+You can access the final results here: https://nextly-challenge-mp.herokuapp.com/
+
+This challenge contains 3 differents components:
+1. A palindrome check, where you can check if a word or sentence is a palindrome or not.
+2. Search User By Name
+3. Paint bucket
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
