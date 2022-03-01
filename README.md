@@ -1,13 +1,13 @@
-# NextlyCodeChallenge
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
-
-You can access the final results here: https://nextly-challenge-mp.herokuapp.com/
+# Nextly Code Challenge
 
 This challenge contains 3 differents components:
-1. A palindrome check, where you can check if a word or sentence is a palindrome or not.
+1. A palindrome checker
 2. Search User By Name
 3. Paint bucket
+
+Live result: https://nextly-challenge-mp.herokuapp.com/
+
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
 
 ## Development server
 
