@@ -22,14 +22,15 @@ export class SearchUserByNameComponent implements OnInit, AfterViewInit {
 
   constructor(private http: HttpClient) { }
 
-  ngAfterViewInit() {
-    this.dataSource.paginator = this.paginator;
-  }
-
-  ngOnInit() {
+  ngOnInit(): void {
     this._getListUsers();
   }
 
+  ngAfterViewInit(): void {
+    this.dataSource.paginator = this.paginator;
+  }
+
+  // Get sample data
   private _getListUsers(): void {
     this.http.get('assets/sample.json').subscribe((data: any)=> {
       this.listUsers = data.sort((a: User, b: User) => a.name.localeCompare(b.name));

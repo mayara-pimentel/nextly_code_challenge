@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./palindrome.component.scss']
 })
 export class PalindromeComponent implements OnInit {
-  inputDefault: string = 'Arara';
+  inputDefault: string = 'Madam';
   isCurrentStringAPalindrome?: boolean;
 
   constructor() { }

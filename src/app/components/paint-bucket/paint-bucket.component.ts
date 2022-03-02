@@ -39,7 +39,7 @@ export class PaintBucketComponent implements OnInit {
   /**
    * I am using the flood fill algorithm to solve the paint bucket challenge
    */
-  floodFill(x: number, y: number, previousColor: string, newColor: string) {
+  floodFill(x: number, y: number, previousColor: string, newColor: string): void {
     if (x < 0 || x >= this.PIXEL_X || y < 0 || y >= this.PIXEL_Y) return;
     if (this.multidimensionalArray[x][y] != previousColor) return;
        
