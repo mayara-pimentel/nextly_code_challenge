@@ -8,12 +8,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class PaintBucketComponent implements OnInit {
   html: string;
-  multidimensionalArray = [
-    ['.', '#', '#', '#', '.', '.' ],
-    ['.', '#', '.', '.', '#', '.' ],
-    ['.', '#', '#', '#', '.', '.' ],
-    ['.', '#', '.', '.', '.', '.' ]
-  ];
+  multidimensionalArray: string[][];
 
   // 4x6
   PIXEL_X = 4;
@@ -22,6 +17,16 @@ export class PaintBucketComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+    this.initializeArray();
+  }
+
+  initializeArray(): void {
+    this.multidimensionalArray = [
+      ['.', '#', '#', '#', '.', '.' ],
+      ['.', '#', '.', '.', '#', '.' ],
+      ['.', '#', '#', '#', '.', '.' ],
+      ['.', '#', '.', '.', '.', '.' ]
+    ];
     this.generateTableHtml();
   }
 
@@ -68,16 +73,6 @@ export class PaintBucketComponent implements OnInit {
     }
 
     this.html = table.outerHTML;
-  }
-
-  resetArray(): void {
-    this.multidimensionalArray = [
-      ['.', '#', '#', '#', '.', '.' ],
-      ['.', '#', '.', '.', '#', '.' ],
-      ['.', '#', '#', '#', '.', '.' ],
-      ['.', '#', '.', '.', '.', '.' ]
-    ];
-    this.generateTableHtml();
   }
 
 }

@@ -15,7 +15,7 @@
         <input type="text" value="o" maxlength="1" #character>
       </div>
       <button class="btn-paint" (click)="paint(pixel.value, character.value)">Paint!</button>
-      <button class="btn-reset" (click)="this.resetArray()">Reset Array</button>
+      <button class="btn-reset" (click)="this.initializeArray()">Reset Array</button>
     </div>
     <div class="item">
       <div class="table-2d-array" [innerHtml]="html"></div>
